@@ -1,0 +1,15 @@
+.div-mae {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+iframe {
+   border-radius: 10px;
+ }
+
+ p {
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 25px;
+ }

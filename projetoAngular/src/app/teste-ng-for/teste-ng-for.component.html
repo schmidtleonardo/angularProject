@@ -1,0 +1,7 @@
+<div class="div-mae">
+  <select [(ngModel)]="i">
+    <option *ngFor="let foto of fotos; let i = index" [value]="i"> {{foto.name}}</option>
+  </select>
+  <img [src]="fotos[i].photoUrls" width="350px">
+</div>
+

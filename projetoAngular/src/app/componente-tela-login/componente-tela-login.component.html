@@ -1,0 +1,41 @@
+<div class="div-maior">
+  <div class="logos-superiores">
+    <a href="#" class="link-logo-sup">
+      <img src="../../assets/sesi-senai-branca.webp" alt="" width="230px">
+      <img src="../../assets/logo-app.png" alt="" width="230px">
+    </a>
+  </div>
+  <div class="div-mae">
+    <div class="div-login">
+      <div class="title">
+        <h1 style="color: #1e9585; margin: 0;">Bem-Vindo</h1>
+        <span class="login-teste" style="color: #9babb7;">ao Espaço do Estudante <b>SESI SENAI</b></span>
+      </div>
+      <div class="container">
+        <div class="input">
+          <label for="email"><img src="../../assets/user.png" alt=""></label>
+          <input type="email" placeholder="user@domain.com" name="email" id="email" [(ngModel)]="email">
+        </div>
+        <div class="input">
+          <label for="senha"><img src="../../assets/padlock.png" alt=""></label>
+          <input type="password" name="senha" id="senha" placeholder="*******" [(ngModel)]="senha">
+        </div>
+      </div>
+      <div class="submit">
+        <div class="btn-login">
+          <button (click)="entrar()" type="submit" class="button">Entrar</button>
+        </div>
+        <div class="link-esqueceu">
+          <a href="#" target="_blank" rel="noopener noreferrer">Esqueceu sua senha?</a>
+        </div>
+      </div>
+    </div>
+    <div class="icone-apps">
+      <span>Experimente o aplicativo do Espaço do Estudante</span>
+      <div class="icones">
+        <a href=""><img src="../../assets/google-play-badge.svg" alt="Aplicativo Google Play"></a>
+        <a href=""><img src="../../assets/apple-store-badge.svg" alt="Aplicativo Apple Store"></a>
+      </div>
+    </div>
+  </div>
+</div>

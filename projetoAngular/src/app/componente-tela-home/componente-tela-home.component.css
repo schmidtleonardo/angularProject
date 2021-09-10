@@ -1,0 +1,146 @@
+
+
+.navegacao {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  font-size: 50px;
+}
+.a-menu {
+    text-decoration: none;
+    color: #0EA0A4;
+  }
+.a-menu:hover {
+    color: #084547;
+  }
+.div-body {
+  margin: 0px !important;
+  background-color: #F7F8FA;
+  width: 99vw;
+  height: 98vh;
+  position: absolute;
+}
+
+.div-maior {
+  margin: 0;
+  background-color: #0EA0A4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 99vw;
+  height: 98vh;
+}
+.logos-superiores{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.link-logo-sup img:first-child {
+  margin-right: 30px;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.logosenai{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .input {
+  flex-direction: row;
+  border: 1px solid #f7f8fa;
+  width: 211.5px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+div {
+  margin: 10px;
+}
+
+.div-mae-login {
+  margin-top: calc(60vh - 370px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-login {
+  padding: 10px;
+  width: 473px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.container input, input:focus {
+  border: none;
+  outline: none;
+  height: 34px;
+  width: 160px;
+}
+
+.container label {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+}
+
+
+.button{
+  font:bold 20px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style:normal;
+  color:#ffffff;
+  background:#0EA0A4;
+  border:0px solid #ffffff;
+  text-shadow:0px 0px 0px #222222;
+  box-shadow:1px 1px 1px #000000;
+  -moz-box-shadow:1px 1px 1px #000000;
+  -webkit-box-shadow:1px 1px 1px #000000;
+  border-radius:4px 4px 4px 4px;
+  -moz-border-radius:4px 4px 4px 4px;
+  -webkit-border-radius:4px 4px 4px 4px;
+  width:150px;
+  padding:5px 40px;
+  cursor:pointer;
+  margin:0 auto;
+  text-align: center;
+}
+
+.button:active{
+  cursor:pointer;
+  position:relative;
+  top:2px;
+}
+
+.a-tela-login {
+  background-color: transparent;
+  color: gray;
+  font-size: 16px;
+}
+
+span {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.icones {
+  display: flex;
+  justify-content: space-between;
+}

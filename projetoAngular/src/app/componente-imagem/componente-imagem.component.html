@@ -1,0 +1,12 @@
+<div class="div-mae">
+  <div class="div-botoes">
+    <select name="imagens" class="select-imagem" [(ngModel)]="i" >
+      <option *ngFor="let foto of fotos; let i = index" [value]="i">{{foto.name}}</option>
+
+    </select>
+  </div>
+  <div class="div-imagem">
+    <img [src]="fotos[i].photoUrls" width="350px">
+    <p>A imagem {{i}} foi selecionada.</p>
+  </div>
+</div>
