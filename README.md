@@ -1,4 +1,4 @@
-# projetoAgular
+# angularProject
 
 -  Grupo
    -  Leonardo Nascimento
