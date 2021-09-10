@@ -12,8 +12,8 @@ export class ComponenteTelaHomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  i: number = 0;
-  mostrar: boolean = true;
+  i: number = 3;
+  mostrar: boolean = false;
 
   email: string = "";
   senha: string = "";
