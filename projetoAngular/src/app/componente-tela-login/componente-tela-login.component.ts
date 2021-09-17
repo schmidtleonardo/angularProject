@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModel } from '@angular/forms';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-componente-tela-login',
@@ -8,17 +9,29 @@ import { NgModel } from '@angular/forms';
 })
 export class ComponenteTelaLoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  email: string = "";
-  senha: string = "";
+  email: string = "admin@admin.com";
+  senha: string = "admin123";
+
+  i: number = 0;
+  mostrar: boolean = true;
 
   entrar() {
     if(this.email == "admin@admin.com" && this.senha == "admin123") {
+      this.i = 0;
+      this.mostrar = true;
+      this.email = "";
+      this.senha = "";
+      this.router.navigate(['/home']);
       
+    } else if (this.email == "" || this.senha == ""){
+      alert("Preencha usuário e senha!")
+    } else {
+      alert("Usuário ou senha incorreta!")
     };
   }
 }

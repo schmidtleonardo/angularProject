@@ -10,6 +10,10 @@ import { ComponenteVideoComponent } from './componente-video/componente-video.co
 import { TesteNgForComponent } from './teste-ng-for/teste-ng-for.component';
 import { Pet } from './modelos/Pet';
 import { ComponenteTelaHomeComponent } from './componente-tela-home/componente-tela-home.component';
+import { ComponenteTesteComponent } from './componente-teste/componente-teste.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { MasterComponent } from './master/master.component';
 
 
 @NgModule({
@@ -20,6 +24,10 @@ import { ComponenteTelaHomeComponent } from './componente-tela-home/componente-t
     ComponenteVideoComponent,
     TesteNgForComponent,
     ComponenteTelaHomeComponent,
+    ComponenteTesteComponent,
+    UsuarioComponent,
+    NotFoundComponent,
+    MasterComponent,
   ],
   imports: [
     BrowserModule,

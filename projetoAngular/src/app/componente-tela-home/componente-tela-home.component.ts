@@ -12,8 +12,8 @@ export class ComponenteTelaHomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  i: number = 3;
-  mostrar: boolean = false;
+  i: number = 0;
+  mostrar: boolean = true;
 
   email: string = "";
   senha: string = "";
@@ -22,6 +22,8 @@ export class ComponenteTelaHomeComponent implements OnInit {
     if(this.email == "admin@admin.com" && this.senha == "admin123") {
       this.i = 0;
       this.mostrar = true;
+      this.email = "";
+      this.senha = "";
     } else if (this.email == "" || this.senha == ""){
       alert("Preencha usuário e senha!")
     } else {

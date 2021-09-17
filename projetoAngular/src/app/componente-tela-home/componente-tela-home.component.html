@@ -1,62 +1,15 @@
 <div class="div-body">
-  <div class="div-mae" *ngIf="mostrar">
+  <div class="div-mae">
     <div>
       <nav>
         <ul class="navegacao">
-          <li><a (click)="i = 0" href="#" class="a-menu">Home</a>
-          <li><a (click)="i = 1" href="#" class="a-menu">Imagem</a></li>
-          <li><a (click)="i = 2" href="#" class="a-menu">Vídeo</a></li>
-          <li><a (click)="i = 3; mostrar = false" href="#" class="a-menu">Logout</a>
+          <li><a routerLink="/home" class="a-menu">Home</a>
+          <li><a routerLink="imagem" class="a-menu">Imagem</a></li>
+          <li><a routerLink="video" class="a-menu">Vídeo</a></li>
+          <li><a routerLink="" class="a-menu">Logout</a>
         </ul>
       </nav>
     </div>
-    <div class="logosenai" *ngIf="i == 0">
-      <img src="../../assets/senai-logo.png" alt="" width="600px">
-    </div>
-  </div>
-  <div>
-    <app-componente-imagem *ngIf="i == 1"></app-componente-imagem>
-    <app-componente-video *ngIf="i == 2"></app-componente-video>
-  </div>
-  <div class="div-maior" *ngIf="i == 3">
-    <div class="logos-superiores">
-      <a href="#" class="link-logo-sup a-tela-login">
-        <img src="../../assets/sesi-senai-branca.webp" alt="" width="230px">
-        <img src="../../assets/logo-app.png" alt="" width="230px">
-      </a>
-    </div>
-    <div class="div-mae-login">
-      <div class="div-login">
-        <div class="title">
-          <h1 style="color: #1e9585; margin: 0;">Bem-Vindo</h1>
-          <span class="login-teste" style="color: #9babb7;">ao Espaço do Estudante <b>SESI SENAI</b></span>
-        </div>
-        <div class="container">
-          <div class="input">
-            <label for="email"><img src="../../assets/user.png" alt=""></label>
-            <input type="email" placeholder="user@domain.com" name="email" id="email" [(ngModel)]="email">
-          </div>
-          <div class="input">
-            <label for="senha"><img src="../../assets/padlock.png" alt=""></label>
-            <input type="password" name="senha" id="senha" placeholder="*******" [(ngModel)]="senha">
-          </div>
-        </div>
-        <div class="submit">
-          <div class="btn-login">
-            <button (click)="entrar()" type="submit" class="button">Entrar</button>
-          </div>
-          <div class="link-esqueceu">
-            <a href="#" target="_blank" rel="noopener noreferrer" class="a-tela-login">Esqueceu sua senha?</a>
-          </div>
-        </div>
-      </div>
-      <div class="icone-apps">
-        <span>Experimente o aplicativo do Espaço do Estudante</span>
-        <div class="icones">
-          <a href="#" class="a-tela-login"><img src="../../assets/google-play-badge.svg" alt="Aplicativo Google Play"></a>
-          <a href="#" class="a-tela-login"><img src="../../assets/apple-store-badge.svg" alt="Aplicativo Apple Store"></a>
-        </div>
-      </div>
-    </div>
+    <router-outlet></router-outlet>
   </div>
 </div>
