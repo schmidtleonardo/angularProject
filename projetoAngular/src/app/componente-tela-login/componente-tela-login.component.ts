@@ -17,17 +17,13 @@ export class ComponenteTelaLoginComponent implements OnInit {
   email: string = "admin@admin.com";
   senha: string = "admin123";
 
-  i: number = 0;
-  mostrar: boolean = true;
 
   entrar() {
     if(this.email == "admin@admin.com" && this.senha == "admin123") {
-      this.i = 0;
-      this.mostrar = true;
       this.email = "";
       this.senha = "";
       this.router.navigate(['/home']);
-      
+
     } else if (this.email == "" || this.senha == ""){
       alert("Preencha usuário e senha!")
     } else {
